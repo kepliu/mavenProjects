@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+               http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	
+	<!--
+		<persistence version="1.0"
+		xmlns="http://java.sun.com/xml/ns/persistence"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+		http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	-->
+
+	<persistence-unit name="jpaTestPU" transaction-type="RESOURCE_LOCAL">
+		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+		
+		<!--
+			<non-jta-data-source>java:jpaTestDS</non-jta-data-source>
+		-->
+		<class>jpatest.Vehicle</class>
+
+		<exclude-unlisted-classes />
+
+
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/jpatest" />
+			<property name="javax.persistence.jdbc.user" value="jpatest" />
+			<property name="javax.persistence.jdbc.password" value="jpatest" />
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver" />
+			<property name="javax.persistence.lock.timeout" value="30000" />
+
+			<property name="org.apache.openjpa.jdbc.sql.DBDictionary" value="org.apache.openjpa.jdbc.sql.DerbyDictionary" />
+            <property name="openjpa.Log" value="DefaultLevel=TRACE, Runtime=INFO, Tool=INFO, SQL=TRACE" />
+		</properties>
+	</persistence-unit>
+
+<!-- 
+	<persistence-unit name="jpaTestJtaPU"
+		transaction-type="JTA">
+		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+
+		<jta-data-source>java:jpaTestJtaDS</jta-data-source>
+		<mapping-file>META-INF/orm.xml</mapping-file>
+
+		<class>jpatest.Vehicle</class>
+
+		<properties>
+			<property name="openjpa.Log"
+				value="DefaultLevel=TRACE, Runtime=INFO, Tool=INFO, SQL=TRACE" />
+		</properties>
+	</persistence-unit>
+-->
+</persistence>

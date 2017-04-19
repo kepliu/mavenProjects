@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm
+                      http://java.sun.com/xml/ns/persistence/orm/orm_2_0.xsd">
+
+	<description>override annotations</description>
+	<persistence-unit-metadata>
+		<persistence-unit-defaults>
+			<schema>jpatest</schema>   <!-- database schema for tables -->
+			<access>FIELD</access>     <!-- mapping defined on fields, not getters -->
+			<entity-listeners>
+				<entity-listener class="jpatest.util.AuditingFieldListener">
+					<pre-persist method-name="insertAuditingField" />
+					<pre-update method-name="updateAuditingField" />
+				</entity-listener>
+			</entity-listeners>
+
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	
+	<table-generator name="ADDRESS_SEQ_GEN" schema="JPATEST"
+		table="SEQUENCE_GENERATOR_TB" pk-column-name="SEQUENCE_NAME"
+		value-column-name="SEQUENCE_VALUE" pk-column-value="ADDRESS_SEQ" />
+
+	<table-generator name="CUST_SEQ_GEN" schema="JPATEST"
+		table="SEQUENCE_GENERATOR_TB" pk-column-name="SEQUENCE_NAME"
+		value-column-name="SEQUENCE_VALUE" pk-column-value="CUSTOMER_SEQ" />
+
+	<table-generator name="ORDER_SEQ_GEN" schema="JPATEST"
+		table="SEQUENCE_GENERATOR_TB" pk-column-name="SEQUENCE_NAME"
+		value-column-name="SEQUENCE_VALUE" pk-column-value="ORDERS_SEQ" />
+
+	<table-generator name="LM_SEQ_GEN" schema="JPATEST"
+		table="SEQUENCE_GENERATOR_TB" pk-column-name="SEQUENCE_NAME"
+		value-column-name="SEQUENCE_VALUE" pk-column-value="LINE_ITEM_SEQ" />
+
+	<table-generator name="BOOK_SEQ_GEN" schema="JPATEST"
+		table="SEQUENCE_GENERATOR_TB" pk-column-name="SEQUENCE_NAME"
+		value-column-name="SEQUENCE_VALUE" pk-column-value="BOOK_SEQ" />
+
+	<table-generator name="CATEG_SEQ_GEN" schema="JPATEST"
+		table="SEQUENCE_GENERATOR_TB" pk-column-name="SEQUENCE_NAME"
+		value-column-name="SEQUENCE_VALUE" pk-column-value="CUSTOMER_SEQ" />
+	
+	<named-query name="selectCustomerAndPrice3">
+		<query> <![CDATA[ SELECT o.customer, o.price FROM Order o WHERE o.orderTime < ?1 ]]>
+		</query>
+		<hint name="javax.persistence.cache.retrieveMode" value="BYPASS" />
+		<hint name="javax.persistence.query.timeout" value="1000" />
+	</named-query>
+
+	<named-query name="getAllOrders">
+		<query>SELECT o FROM Order o</query>
+	</named-query>
+	<named-query name="queryOrders">
+		<query> <![CDATA[ SELECT o FROM Order o WHERE o.orderTime < ?1 ]]>
+		</query>
+	</named-query>
+
+ 	<mapped-superclass class="jpatest.entity.BaseEntity2">
+		<attributes>
+			<basic name="createUser">
+				<column name="CREATE_USER" />
+			</basic>
+			<basic name="updateUser">
+				<column name="UPDATE_USER" />
+			</basic> 	 
+			<basic name="createTime">
+				<column name="CREATE_TIME" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>	
+			<basic name="updateTime">
+				<column name="UPDATE_TIME" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>	
+			<version name="version">
+				<column name="VERSION" />
+			</version>
+		</attributes>
+	</mapped-superclass>
+
+	<mapped-superclass class="jpatest.entity.User">
+		<attributes>
+			<basic name="name" />
+			<basic name="picture" fetch="LAZY" optional="false">
+				<column name="PICTURE" column-definition="BLOB NOT NULL" />
+				<lob />
+			</basic>
+			<one-to-one name="address" fetch="EAGER">
+				<join-column name="ADDRESS_ID_FK"
+					referenced-column-name="ADDRESS_ID_PK" />
+				<cascade>
+					<cascade-persist />
+					<cascade-remove />
+				</cascade>
+			</one-to-one>
+		</attributes>
+	</mapped-superclass>
+
+	<entity class="jpatest.entity.Address">
+		<table name="ADDRESS" />
+		<attributes>
+			<id name="addressId">
+				<column name="ADDRESS_ID_PK" />
+				<generated-value generator="ADDRESS_SEQ_GEN"
+					strategy="TABLE" />
+			</id>
+			<basic name="street" optional="true">
+				<column name="STREET" nullable="false" updatable="true"
+					insertable="true" />
+			</basic>
+			<basic name="city" />
+			<basic name="state" />
+			<basic name="zip">
+				<column name="ZIP" />
+			</basic>
+			<transient name="isResidential" />
+			<one-to-one name="customer" fetch="EAGER" optional="true"
+				mapped-by="address" />
+		</attributes>
+	</entity>
+
+	<entity class="jpatest.entity.Customer">
+		<table name="CUSTOMER" />
+		<inheritance strategy="JOINED" />
+		<discriminator-value>C</discriminator-value>
+		<discriminator-column name="CUSTOMER_TYPE"
+			discriminator-type="STRING" length="1" />
+		<association-overrides>
+			<association-override name="address">
+				<join-columns>
+					<join-column name="ADDRESS_ID_FK"
+						referenced-column-name="ADDRESS_ID_PK" />
+				</join-columns>
+			</association-override>
+		</association-overrides>
+		<attributes>
+			<id name="customerId">
+				<column name="CUSTOMER_ID_PK" />
+				<generated-value generator="CUST_SEQ_GEN" strategy="TABLE" />
+			</id>
+			<basic name="customerType">
+				<column name="CUSTOMER_TYPE" />
+				<enumerated>STRING</enumerated>
+			</basic>
+			<embedded name="bank">
+				<attribute-override name="bankName">
+					<column name="BANK_NAME" />
+				</attribute-override>
+				<attribute-override name="accountNumber">
+					<column name="ACCOUNT_NUMBER" />
+				</attribute-override>
+				<attribute-override name="routingNumber">
+					<column name="ROUTING_NUMBER" />
+				</attribute-override>
+			</embedded>
+			<one-to-many name="orders" mapped-by="customer" fetch="EAGER" />
+		</attributes>
+	</entity>
+
+	<entity class="jpatest.entity.PreferredCustomer">
+		<table name="PREFERRED_CUSTOMER" />
+		<primary-key-join-column name="CUSTOMER_ID_FPK"
+			referenced-column-name="CUSTOMER_ID_PK" />
+		<discriminator-value>P</discriminator-value>
+		<attributes>
+			<basic name="discountRate">
+				<column name="DISCOUNT_RATE" />
+			</basic>
+			<basic name="expirationDate">
+				<column name="EXPIRATION_DATE" />
+				<temporal>DATE</temporal>
+			</basic>
+		</attributes>
+	</entity>
+
+	<entity class="jpatest.entity.GoldCustomer">
+		<table name="GOLD_CUSTOMER" />
+		<primary-key-join-column name="CUSTOMER_ID_FPK"
+			referenced-column-name="CUSTOMER_ID_PK" />
+		<discriminator-value>G</discriminator-value>
+		<attributes>
+			<basic name="cardNumber">
+				<column name="CARD_NUMBER" />
+			</basic>
+			<basic name="creditLimit">
+				<column name="CREDIT_LIMIT" />
+			</basic>
+		</attributes>
+	</entity>
+
+	<entity class="jpatest.entity.Order">
+		<table name="ORDERS" />
+		<attributes>
+			<id name="orderId">
+				<column name="ORDER_ID_PK" />
+				<generated-value generator="ORDER_SEQ_GEN" strategy="TABLE" />
+			</id>
+			<basic name="price" />
+			<basic name="orderTime" optional="true">
+				<column name="ORDER_TIME" updatable="true" insertable="true" />
+			</basic>
+			<basic name="status">
+				<enumerated>ORDINAL</enumerated>
+			</basic>
+			<many-to-one name="customer" fetch="EAGER" optional="true">
+				<join-column name="CUSTOMER_ID_FK"
+					referenced-column-name="CUSTOMER_ID_PK" />
+
+			</many-to-one>
+			<one-to-many name="lineItems" mapped-by="order" fetch="LAZY">
+				<order-column name="LINE_ITEM_ID_PK" />
+				<cascade>
+					<cascade-persist />
+					<cascade-remove />
+					<cascade-merge />
+				</cascade>
+			</one-to-many>
+		</attributes>
+	</entity>
+
+	<entity class="jpatest.entity.LineItem">
+		<table name="LINE_ITEM" />
+		<attributes>
+			<id name="lineItemId">
+				<column name="LINE_ITEM_ID_PK" />
+				<generated-value generator="LM_SEQ_GEN" strategy="TABLE" />
+			</id>
+			<basic name="quantity" />
+			<basic name="price" />
+			<many-to-one name="book" fetch="EAGER" optional="true">
+				<join-column name="BOOK_ID_FK" referenced-column-name="BOOK_ID_PK" />
+			</many-to-one>
+			<many-to-one name="order" fetch="EAGER" optional="true">
+				<join-column name="ORDER_ID_FK" referenced-column-name="ORDER_ID_PK" />
+			</many-to-one>
+		</attributes>
+	</entity>
+
+	<entity class="jpatest.entity.Book">
+		<table name="BOOK" />
+		<secondary-table name="CONTENT">
+			<primary-key-join-column name="BOOK_ID_FPK"
+				referencedColumnName="BOOK_ID_PK" />
+		</secondary-table>
+		<attribute-overrides>
+			<attribute-override name="createUser">
+				<column name="BOOK_CREATE_USER" />
+			</attribute-override>
+			<attribute-override name="createTime">
+				<column name="BOOK_CREATE_TIME" />
+			</attribute-override>
+			<attribute-override name="updateUser">
+				<column name="BOOK_UPDATE_USER" />
+			</attribute-override>
+			<attribute-override name="updateTime">
+				<column name="BOOK_UPDATE_TIME" />
+			</attribute-override>
+		</attribute-overrides>
+		<attributes>
+			<id name="bookId">
+				<column name="BOOK_ID_PK" />
+				<generated-value generator="BOOK_SEQ_GEN" strategy="TABLE" />
+			</id>
+			<basic name="isbn" />
+			<basic name="title" />
+			<basic name="rating" />
+			<basic name="price">
+				<column name="PRICE" precision="12" scale="2" />
+			</basic>
+			<basic name="pdf" fetch="LAZY">
+				<column name="PDF" table="CONTENT" columnDefinition="BLOB NOT NULL">
+				</column>
+				<lob />
+			</basic>
+			<one-to-many name="lineItems" mapped-by="book" fetch="LAZY">
+				<cascade>
+					<cascade-all />
+				</cascade>
+			</one-to-many>
+			<many-to-many name="categories" fetch="EAGER" optional="true">
+				<join-table name="BOOK_CATEGORY">
+					<join-column name="BOOK_ID_FPK" referenced-column-name="BOOK_ID_PK" />
+					<inverse-join-column name="CATEGORY_ID_FPK"
+						referenced-column-name="CATEGORY_ID_PK" />
+				</join-table>
+			</many-to-many>
+		</attributes>
+	</entity>
+
+	<entity class="jpatest.entity.Category">
+		<attributes>
+			<id name="categoryId">
+				<column name="CATEGORY_ID_PK" />
+				<generated-value generator="CATEG_SEQ_GEN" strategy="TABLE" />
+			</id>
+			<basic name="categoryName">
+				<column name="CATEGORY_NAME" />
+			</basic>
+			<many-to-one name="parentCategory" fetch="EAGER"
+				optional="true">
+				<join-column name="PARENT_CATEGORY_FK"
+					referenced-column-name="CATEGORY_ID_PK" />
+			</many-to-one>
+			<one-to-many name="childCategories" mapped-by="parentCategory" />
+			<many-to-many name="books" mapped-by="categories">
+				<order-by name="title ASC, price DESC" />
+			</many-to-many>
+		</attributes>
+	</entity>
+
+	<embeddable class="jpatest.entity.BankInfo">
+		<attributes>
+			<basic name="bankName">
+				<column name="BANK_NAME_X" />
+			</basic>
+			<basic name="accountNumber">
+				<column name="BANK_ACCOUNT_NUMBER" />
+			</basic>
+			<basic name="routingNumber">
+				<column name="BANK_ROUTING_NUMBER" />
+			</basic>
+		</attributes>
+	</embeddable>
+
+</entity-mappings>

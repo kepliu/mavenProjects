@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.0"
+  xmlns="http://java.sun.com/xml/ns/persistence/orm"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm
+                      http://java.sun.com/xml/ns/persistence/orm/orm_2_0.xsd">
+
+	<!--
+		<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm
+		http://java.sun.com/xml/ns/persistence/orm_1_0.xsd" version="1.0">
+	-->
+
+	<description>override annotations</description>
+	<persistence-unit-metadata>
+	  <!--  
+	  <xml-mapping-metadata-complete/>
+	   -->
+		<persistence-unit-defaults>
+		    <!-- database schema for tables: Comment this out for Hibernate -->
+		     
+			<schema>jpatest</schema>   
+			
+			<!--  
+			<catalog>jpatest</catalog>
+			-->
+			<access>FIELD</access>     <!-- mapping defined on fields, not getters -->
+			<!-- 
+			<cascade-persist />
+			 -->
+			<entity-listeners>
+				<entity-listener class="jpatest.util.AuditingFieldListener">
+					<pre-persist method-name="insertAuditingField" />
+					<pre-update method-name="updateAuditingField" />
+				</entity-listener>
+			</entity-listeners>
+
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	 
+	<table-generator name="CUST_SEQ_GEN" schema ="jpatest"
+		table="SEQUENCE_GENERATOR_TB" pk-column-name="SEQUENCE_NAME"
+		value-column-name="SEQUENCE_VALUE" pk-column-value="CUSTOMER_SEQ" />
+	
+	<named-query name="selectVehiclesByMake">
+		<query>SELECT v FROM Vehicle v WHERE v.make = ?1</query>
+		<hint name="javax.persistence.cache.retrieveMode" value="BYPASS" />
+		<hint name="javax.persistence.query.timeout" value="1000" />
+	</named-query>
+	
+	<named-query name="selectCustomerAndPrice3">
+		<query> <![CDATA[ SELECT o.customer, o.price FROM Order o WHERE o.orderTime < ?1 ]]>
+		</query>
+		<hint name="javax.persistence.cache.retrieveMode" value="BYPASS" />
+		<hint name="javax.persistence.query.timeout" value="1000" />
+	</named-query>
+
+	<named-query name="getAllOrders">
+		<query>SELECT o FROM Order o</query>
+	</named-query>
+	<named-query name="queryOrders">
+		<query> <![CDATA[ SELECT o FROM Order o WHERE o.orderTime < ?1 ]]>
+		</query>
+	</named-query>
+	
+	<entity class="jpatest.Vehicle" metadata-complete="true">
+		<table name="VEHICLE" />
+		<attributes>
+			<id name="vin">
+				<column name="VIN" length="17" />
+			</id>
+			<basic name="make" />
+			<basic name="model" />
+			<basic name="year" optional="true">
+				<column name="MODEL_YEAR" />
+			</basic>
+			<version name="version">
+				<column name="VERSION" />
+			</version>
+		</attributes>
+	</entity>
+	
+</entity-mappings>

@@ -1,0 +1,14 @@
+Jan 11, 2016 3:05:49 PM org.luyue.commons.logging.JavaLogging logMessag
+SEVERE: Hello from java.util.logging.
+Jan 11, 2016 3:05:49 PM org.luyue.commons.logging.JavaLogging logMessag
+WARNING: Hello from java.util.logging.
+Jan 11, 2016 3:05:49 PM org.luyue.commons.logging.JavaLogging logMessag
+INFO: Hello from java.util.logging.
+Jan 11, 2016 3:05:49 PM org.luyue.commons.logging.JavaLogging logMessag
+CONFIG: Hello from java.util.logging.
+Jan 11, 2016 3:05:49 PM org.luyue.commons.logging.JavaLogging logMessag
+FINE: Hello from java.util.logging.
+Jan 11, 2016 3:05:49 PM org.luyue.commons.logging.JavaLogging logMessag
+FINER: Hello from java.util.logging.
+Jan 11, 2016 3:05:49 PM org.luyue.commons.logging.JavaLogging logMessag
+FINEST: Hello from java.util.logging.

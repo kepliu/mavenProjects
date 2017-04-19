@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm 
+                     http://java.sun.com/xml/ns/persistence/orm/orm_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit-metadata>
+	  <!--  
+	  <xml-mapping-metadata-complete/>
+	  -->
+		<persistence-unit-defaults>
+			<schema>jpatest</schema>   <!-- database schema for tables -->
+			<access>FIELD</access>     <!-- mapping defined on fields, not getters -->
+
+			
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+
+	 <named-query name="selectVehicleByMake">
+    <query>SELECT v FROM Vehicle v WHERE v.make = ?1</query>
+    <hint name="eclipselink.cache-usage" value="DoNotCheckCache" />
+    <hint name="javax.persistence.query.timeout" value="1000" />
+  </named-query>
+
+	<entity class="jpatest.Vehicle" metadata-complete="true">
+		<table name="VEHICLE" />
+		<attributes>
+			<id name="vin">
+				<column name="VIN" length="17" />
+			</id>
+			<basic name="make" />
+			<basic name="model" />
+			<basic name="year" optional="true">
+				<column name="MODEL_YEAR" />
+			</basic>
+			<version name="version">
+				<column name="VERSION" />
+			</version>
+		</attributes>
+	</entity>
+
+
+</entity-mappings>

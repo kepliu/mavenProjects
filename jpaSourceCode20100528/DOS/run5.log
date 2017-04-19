@@ -1,0 +1,213 @@
+
+C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS>set CLASSPATH=.;.;.;.;.;.;.;.;.;.;.;.;;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar 
+
+C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS>set CLASSPATH=.;.;.;.;.;.;.;.;.;.;.;.;;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar 
+
+C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS>set CLASSPATH=.;.;.;.;.;.;.;.;.;.;.;.;;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\eclipselink.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\javax.persistence_2.1.0.v201304241213.jar;C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS\lib\derbyclient.jar 
+
+C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS>del jpatest\*.class 
+
+C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS>javac -processor org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor  jpatest/Vehicle.java 
+
+C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS>javac jpatest/Vehicle.java jpatest/VehicleTest.java 
+
+C:\Users\liuka\jurnalDev\jpaSourceCode20100528\DOS>java  -ea jpatest/VehicleTest 
+[EL Fine]: 2015-11-30 15:38:29.474--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.jboss.JBossPlatform
+[EL Finest]: 2015-11-30 15:38:29.489--ServerSession(1111468685)--Thread(Thread[main,5,main])--Begin predeploying Persistence Unit jpaTestPU; session /file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU; state Initial; factoryCount 0
+[EL Info]: 2015-11-30 15:38:29.499--ServerSession(1111468685)--Thread(Thread[main,5,main])--property eclipselink.jdbc.user is deprecated, property javax.persistence.jdbc.user should be used instead.
+[EL Info]: 2015-11-30 15:38:29.499--ServerSession(1111468685)--Thread(Thread[main,5,main])--property eclipselink.jdbc.driver is deprecated, property javax.persistence.jdbc.driver should be used instead.
+[EL Info]: 2015-11-30 15:38:29.499--ServerSession(1111468685)--Thread(Thread[main,5,main])--property eclipselink.jdbc.url is deprecated, property javax.persistence.jdbc.url should be used instead.
+[EL Info]: 2015-11-30 15:38:29.5--ServerSession(1111468685)--Thread(Thread[main,5,main])--property eclipselink.jdbc.password is deprecated, property javax.persistence.jdbc.password should be used instead.
+[EL Finest]: 2015-11-30 15:38:29.5--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.orm.throw.exceptions; default value=true
+[EL Finest]: 2015-11-30 15:38:29.501--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.multitenant.tenants-share-emf; default value=true
+[EL Finest]: 2015-11-30 15:38:29.501--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.multitenant.tenants-share-cache; default value=false
+[EL Finer]: 2015-11-30 15:38:29.525--Thread(Thread[main,5,main])--Searching for mapping file: [META-INF/orm.xml] at root URL: [file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/].
+[EL Finer]: 2015-11-30 15:38:29.543--Thread(Thread[main,5,main])--Found mapping file: [file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/META-INF/orm.xml] at root URL: [file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/].
+[EL Finer]: 2015-11-30 15:38:30.473--Thread(Thread[main,5,main])--Searching for mapping file: [META-INF/eclipselink-orm.xml] at root URL: [file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/].
+[EL Config]: 2015-11-30 15:38:30.519--ServerSession(1111468685)--Thread(Thread[main,5,main])--The access type for the persistent class [class jpatest.Vehicle] is set to [FIELD].
+[EL Config]: 2015-11-30 15:38:30.529--ServerSession(1111468685)--Thread(Thread[main,5,main])--Ignoring the annotation [@javax.persistence.Entity({})] on the element [class jpatest.Vehicle] because of an XML metadata-complete setting of true for this class.
+[EL Config]: 2015-11-30 15:38:30.53--ServerSession(1111468685)--Thread(Thread[main,5,main])--The alias name for the entity class [class jpatest.Vehicle] is being defaulted to: Vehicle.
+[EL Config]: 2015-11-30 15:38:30.531--ServerSession(1111468685)--Thread(Thread[main,5,main])--Ignoring the annotation [@javax.persistence.Table({schema=JPATEST, name=VEHICLE})] on the element [class jpatest.Vehicle] because of an XML metadata-complete setting of true for this class.
+[EL Config]: 2015-11-30 15:38:30.533--ServerSession(1111468685)--Thread(Thread[main,5,main])--The table schema for entity [class jpatest.Vehicle] is being defaulted to: jpatest.
+[EL Config]: 2015-11-30 15:38:30.574--ServerSession(1111468685)--Thread(Thread[main,5,main])--The column name for element [model] is being defaulted to: MODEL.
+[EL Config]: 2015-11-30 15:38:30.576--ServerSession(1111468685)--Thread(Thread[main,5,main])--The column name for element [make] is being defaulted to: MAKE.
+[EL Finest]: 2015-11-30 15:38:30.658--ServerSession(1111468685)--Thread(Thread[main,5,main])--query selectVehicleByMake: query hint eclipselink.cache-usage; value DoNotCheckCache
+[EL Finest]: 2015-11-30 15:38:30.659--ServerSession(1111468685)--Thread(Thread[main,5,main])--query selectVehicleByMake: unknown query hint javax.persistence.query.timeout will be ignored
+[EL Finest]: 2015-11-30 15:38:30.957--ServerSession(1111468685)--Thread(Thread[main,5,main])--End predeploying Persistence Unit jpaTestPU; session /file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU; state Predeployed; factoryCount 0
+[EL Finer]: 2015-11-30 15:38:30.958--Thread(Thread[main,5,main])--JavaSECMPInitializer - transformer is null.
+[EL Finest]: 2015-11-30 15:38:30.958--ServerSession(1111468685)--Thread(Thread[main,5,main])--Begin predeploying Persistence Unit jpaTestPU; session /file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU; state Predeployed; factoryCount 0
+[EL Finest]: 2015-11-30 15:38:30.959--ServerSession(1111468685)--Thread(Thread[main,5,main])--End predeploying Persistence Unit jpaTestPU; session /file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU; state Predeployed; factoryCount 1
+[EL Finer]: 2015-11-30 15:38:30.975--ServerSession(1111468685)--Thread(Thread[main,5,main])--Canonical Metamodel class [jpatest.Vehicle_] not found during initialization.
+[EL Finest]: 2015-11-30 15:38:30.976--ServerSession(1111468685)--Thread(Thread[main,5,main])--Begin deploying Persistence Unit jpaTestPU; session /file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU; state Predeployed; factoryCount 1
+[EL Info]: 2015-11-30 15:38:30.977--ServerSession(1111468685)--Thread(Thread[main,5,main])--property eclipselink.jdbc.user is deprecated, property javax.persistence.jdbc.user should be used instead.
+[EL Info]: 2015-11-30 15:38:30.978--ServerSession(1111468685)--Thread(Thread[main,5,main])--property eclipselink.jdbc.driver is deprecated, property javax.persistence.jdbc.driver should be used instead.
+[EL Info]: 2015-11-30 15:38:30.978--ServerSession(1111468685)--Thread(Thread[main,5,main])--property eclipselink.jdbc.url is deprecated, property javax.persistence.jdbc.url should be used instead.
+[EL Info]: 2015-11-30 15:38:30.978--ServerSession(1111468685)--Thread(Thread[main,5,main])--property eclipselink.jdbc.password is deprecated, property javax.persistence.jdbc.password should be used instead.
+[EL Finest]: 2015-11-30 15:38:30.991--ServerSession(1111468685)--Thread(Thread[main,5,main])--Bean Validation Factory was not initialized: [javax/validation/Validation].
+[EL Finer]: 2015-11-30 15:38:30.997--Thread(Thread[main,5,main])--Detected server platform: org.eclipse.persistence.platform.server.NoServerPlatform.
+[EL Finer]: 2015-11-30 15:38:30.997--Thread(Thread[main,5,main])--initializing session manager
+[EL Finest]: 2015-11-30 15:38:30.998--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.target-server; value=JBoss; translated value=org.eclipse.persistence.platform.server.jboss.JBossPlatform
+[EL Finest]: 2015-11-30 15:38:30.998--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.logging.level; value=FINEST; translated value=FINEST
+[EL Finest]: 2015-11-30 15:38:30.999--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.logging.level; value=FINEST; translated value=FINEST
+[EL Finest]: 2015-11-30 15:38:31.0--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.target-database; value=Derby; translated value=org.eclipse.persistence.platform.database.DerbyPlatform
+[EL Finest]: 2015-11-30 15:38:31.007--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=javax.persistence.jdbc.user; value=jpatest
+[EL Finest]: 2015-11-30 15:38:31.008--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=javax.persistence.jdbc.password; value=xxxxxx
+[EL Finest]: 2015-11-30 15:38:32.152--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=javax.persistence.jdbc.driver; value=org.apache.derby.jdbc.ClientDriver
+[EL Finest]: 2015-11-30 15:38:32.152--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=javax.persistence.jdbc.url; value=jdbc:derby://localhost:1527/jpatest
+[EL Finest]: 2015-11-30 15:38:32.153--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.jdbc.write-connections.min; value=1
+[EL Finest]: 2015-11-30 15:38:32.153--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.jdbc.write-connections.max; value=100
+[EL Finest]: 2015-11-30 15:38:32.153--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.jdbc.read-connections.shared; value=true
+[EL Finest]: 2015-11-30 15:38:32.154--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.jdbc.read-connections.min; value=1
+[EL Finest]: 2015-11-30 15:38:32.154--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.jdbc.read-connections.max; value=100
+[EL Finest]: 2015-11-30 15:38:32.155--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.cache.type.default; value=SoftWeak; translated value=org.eclipse.persistence.internal.identitymaps.SoftCacheWeakIdentityMap
+[EL Finest]: 2015-11-30 15:38:32.155--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.cache.type.Order; value=SoftWeak; translated value=org.eclipse.persistence.internal.identitymaps.SoftCacheWeakIdentityMap
+[EL Finest]: 2015-11-30 15:38:32.155--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.cache.type.Vehicle; value=SoftWeak; translated value=org.eclipse.persistence.internal.identitymaps.SoftCacheWeakIdentityMap
+[EL Finest]: 2015-11-30 15:38:32.156--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.cache.size.default; value=5000
+[EL Finest]: 2015-11-30 15:38:32.156--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.cache.size.Order; value=100
+[EL Finest]: 2015-11-30 15:38:32.157--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.cache.size.Vehicle; value=100
+[EL Finest]: 2015-11-30 15:38:32.157--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.cache.shared.default; value=true; translated value=true
+[EL Finest]: 2015-11-30 15:38:32.168--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.cache.shared.Order; value=true; translated value=true
+[EL Finest]: 2015-11-30 15:38:32.168--ServerSession(1111468685)--Thread(Thread[main,5,main])--property=eclipselink.cache.shared.Vehicle; value=true; translated value=true
+[EL Info]: 2015-11-30 15:38:32.175--ServerSession(1111468685)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.6.1.v20150916-55dc7c3
+[EL Config]: 2015-11-30 15:38:32.187--ServerSession(1111468685)--Connection(295918039)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>DerbyPlatform
+	user name=> "jpatest"
+	datasource URL=> "jdbc:derby://localhost:1527/jpatest"
+))
+[EL Config]: 2015-11-30 15:38:32.377--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connected: jdbc:derby://localhost:1527/jpatest
+	User: jpatest
+	Database: Apache Derby  Version: 10.8.3.0 - (1405108)
+	Driver: Apache Derby Network Client JDBC Driver  Version: 10.8.3.0 - (1405108)
+[EL Finest]: 2015-11-30 15:38:32.377--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection acquired from connection pool [read].
+[EL Finest]: 2015-11-30 15:38:32.377--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection released to connection pool [read].
+[EL Config]: 2015-11-30 15:38:32.377--ServerSession(1111468685)--Connection(722056649)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>DerbyPlatform
+	user name=> "jpatest"
+	datasource URL=> "jdbc:derby://localhost:1527/jpatest"
+))
+[EL Config]: 2015-11-30 15:38:32.382--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--Connected: jdbc:derby://localhost:1527/jpatest
+	User: jpatest
+	Database: Apache Derby  Version: 10.8.3.0 - (1405108)
+	Driver: Apache Derby Network Client JDBC Driver  Version: 10.8.3.0 - (1405108)
+[EL Info]: 2015-11-30 15:38:32.524--ServerSession(1111468685)--Thread(Thread[main,5,main])--/file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU login successful
+[EL Warning]: 2015-11-30 15:38:32.525--ServerSession(1111468685)--Thread(Thread[main,5,main])--Failed to find MBean Server: null or empty List returned from MBeanServerFactory.findMBeanServer(null)
+[EL Finer]: 2015-11-30 15:38:32.59--ServerSession(1111468685)--Thread(Thread[main,5,main])--JMX MBeanServer instance found: [com.sun.jmx.mbeanserver.JmxMBeanServer@4736efa7], # of beans: [19], domain: [DefaultDomain] at index: [0].
+[EL Finest]: 2015-11-30 15:38:32.597--ServerSession(1111468685)--Thread(Thread[main,5,main])--Registered MBean: org.eclipse.persistence.services.mbean.MBeanDevelopmentServices[TopLink:Name=Development-/file_/C_/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU,Type=Configuration] on server com.sun.jmx.mbeanserver.JmxMBeanServer@4736efa7
+[EL Finest]: 2015-11-30 15:38:32.601--ServerSession(1111468685)--Thread(Thread[main,5,main])--Registered MBean: org.eclipse.persistence.services.jboss.MBeanJBossRuntimeServices[TopLink:Name=Session(/file_/C_/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU)] on server com.sun.jmx.mbeanserver.JmxMBeanServer@4736efa7
+[EL Finest]: 2015-11-30 15:38:32.601--ServerSession(1111468685)--Thread(Thread[main,5,main])--EclipseLink JMX Runtime Services is referencing the [Platform ConversionManager] ClassLoader at: [sun.misc.Launcher$AppClassLoader@631d75b9]
+[EL Finest]: 2015-11-30 15:38:32.602--ServerSession(1111468685)--Thread(Thread[main,5,main])--The applicationName for the MBean attached to session [/file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU] is [unknown]
+[EL Finest]: 2015-11-30 15:38:32.602--ServerSession(1111468685)--Thread(Thread[main,5,main])--The moduleName for the MBean attached to session [/file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU] is [unknown]
+[EL Finer]: 2015-11-30 15:38:32.605--ServerSession(1111468685)--Thread(Thread[main,5,main])--Canonical Metamodel class [jpatest.Vehicle_] not found during initialization.
+[EL Finest]: 2015-11-30 15:38:32.606--ServerSession(1111468685)--Thread(Thread[main,5,main])--End deploying Persistence Unit jpaTestPU; session /file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU; state Deployed; factoryCount 1
+[EL Finer]: 2015-11-30 15:38:32.631--ServerSession(1111468685)--Thread(Thread[main,5,main])--client acquired: 1401445483
+[EL Finer]: 2015-11-30 15:38:32.642--ClientSession(1401445483)--Thread(Thread[main,5,main])--acquire unit of work: 686937314
+[EL Finest]: 2015-11-30 15:38:32.643--UnitOfWork(686937314)--Thread(Thread[main,5,main])--persist() operation called on: jpatest.Vehicle@1ccf566e.
+[EL Finer]: 2015-11-30 15:38:32.675--UnitOfWork(686937314)--Thread(Thread[main,5,main])--begin unit of work commit
+[EL Finest]: 2015-11-30 15:38:32.685--UnitOfWork(686937314)--Thread(Thread[main,5,main])--Execute query InsertObjectQuery(jpatest.Vehicle@1ccf566e)
+[EL Finest]: 2015-11-30 15:38:32.689--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: 2015-11-30 15:38:32.69--ClientSession(1401445483)--Connection(176010546)--Thread(Thread[main,5,main])--begin transaction
+[EL Fine]: 2015-11-30 15:38:32.69--ClientSession(1401445483)--Connection(176010546)--Thread(Thread[main,5,main])--INSERT INTO jpatest.VEHICLE (VIN, MAKE, MODEL, VERSION, MODEL_YEAR) VALUES (?, ?, ?, ?, ?)
+	bind => [6B7HF16Y7SS244327, Ford, Flex, 1, 2009]
+[EL Finer]: 2015-11-30 15:38:32.726--ClientSession(1401445483)--Connection(176010546)--Thread(Thread[main,5,main])--commit transaction
+[EL Finest]: 2015-11-30 15:38:32.728--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--Connection released to connection pool [default].
+[EL Finer]: 2015-11-30 15:38:32.73--UnitOfWork(686937314)--Thread(Thread[main,5,main])--end unit of work commit
+[EL Finer]: 2015-11-30 15:38:32.73--UnitOfWork(686937314)--Thread(Thread[main,5,main])--resume unit of work
+[EL Finer]: 2015-11-30 15:38:32.731--UnitOfWork(686937314)--Thread(Thread[main,5,main])--release unit of work
+[EL Finer]: 2015-11-30 15:38:32.731--ClientSession(1401445483)--Thread(Thread[main,5,main])--client released
+v.getVersion() : 1
+[EL Finer]: 2015-11-30 15:38:32.732--ServerSession(1111468685)--Thread(Thread[main,5,main])--client acquired: 231556949
+[EL Finer]: 2015-11-30 15:38:32.732--ClientSession(231556949)--Thread(Thread[main,5,main])--acquire unit of work: 537273479
+[EL Finest]: 2015-11-30 15:38:32.732--UnitOfWork(537273479)--Thread(Thread[main,5,main])--Merge clone with references jpatest.Vehicle@1ccf566e
+[EL Finer]: 2015-11-30 15:38:32.733--UnitOfWork(537273479)--Thread(Thread[main,5,main])--begin unit of work flush
+[EL Finest]: 2015-11-30 15:38:32.734--UnitOfWork(537273479)--Thread(Thread[main,5,main])--Execute query UpdateObjectQuery(jpatest.Vehicle@73482b7d)
+[EL Finest]: 2015-11-30 15:38:32.736--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: 2015-11-30 15:38:32.736--ClientSession(231556949)--Connection(176010546)--Thread(Thread[main,5,main])--begin transaction
+[EL Fine]: 2015-11-30 15:38:32.737--ClientSession(231556949)--Connection(176010546)--Thread(Thread[main,5,main])--UPDATE jpatest.VEHICLE SET MAKE = ?, VERSION = ? WHERE ((VIN = ?) AND (VERSION = ?))
+	bind => [Mercury, 2, 6B7HF16Y7SS244327, 1]
+[EL Finer]: 2015-11-30 15:38:32.739--UnitOfWork(537273479)--Thread(Thread[main,5,main])--end unit of work flush
+[EL Finer]: 2015-11-30 15:38:32.739--UnitOfWork(537273479)--Thread(Thread[main,5,main])--resume unit of work
+[EL Finer]: 2015-11-30 15:38:32.74--UnitOfWork(537273479)--Thread(Thread[main,5,main])--begin unit of work commit
+[EL Finest]: 2015-11-30 15:38:32.74--UnitOfWork(537273479)--Thread(Thread[main,5,main])--Execute query UpdateObjectQuery(jpatest.Vehicle@73482b7d)
+[EL Fine]: 2015-11-30 15:38:32.741--ClientSession(231556949)--Connection(176010546)--Thread(Thread[main,5,main])--UPDATE jpatest.VEHICLE SET MODEL_YEAR = ?, VERSION = ? WHERE ((VIN = ?) AND (VERSION = ?))
+	bind => [2011, 3, 6B7HF16Y7SS244327, 2]
+[EL Finer]: 2015-11-30 15:38:32.744--ClientSession(231556949)--Connection(176010546)--Thread(Thread[main,5,main])--commit transaction
+[EL Finest]: 2015-11-30 15:38:32.745--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--Connection released to connection pool [default].
+[EL Finer]: 2015-11-30 15:38:32.746--UnitOfWork(537273479)--Thread(Thread[main,5,main])--end unit of work commit
+[EL Finer]: 2015-11-30 15:38:32.746--UnitOfWork(537273479)--Thread(Thread[main,5,main])--resume unit of work
+[EL Finer]: 2015-11-30 15:38:32.746--UnitOfWork(537273479)--Thread(Thread[main,5,main])--release unit of work
+[EL Finer]: 2015-11-30 15:38:32.746--ClientSession(231556949)--Thread(Thread[main,5,main])--client released
+v2.getVersion() : 3
+Optimistic lock error
+[EL Finer]: 2015-11-30 15:38:32.747--ServerSession(1111468685)--Thread(Thread[main,5,main])--client acquired: 617730134
+[EL Finer]: 2015-11-30 15:38:32.747--ClientSession(617730134)--Thread(Thread[main,5,main])--acquire unit of work: 1254412540
+[EL Finest]: 2015-11-30 15:38:32.747--UnitOfWork(1254412540)--Thread(Thread[main,5,main])--Merge clone with references jpatest.Vehicle@73482b7d
+[EL Finest]: 2015-11-30 15:38:32.748--UnitOfWork(1254412540)--Thread(Thread[main,5,main])--Execute query ReadObjectQuery(referenceClass=Vehicle )
+[EL Finest]: 2015-11-30 15:38:32.758--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection acquired from connection pool [read].
+[EL Fine]: 2015-11-30 15:38:32.759--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--SELECT VIN, MAKE, MODEL, VERSION, MODEL_YEAR FROM jpatest.VEHICLE WHERE (VIN = ?)
+	bind => [6B7HF16Y7SS244327]
+[EL Finest]: 2015-11-30 15:38:32.784--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection released to connection pool [read].
+[EL Finest]: 2015-11-30 15:38:32.784--UnitOfWork(1254412540)--Thread(Thread[main,5,main])--Merge clone jpatest.Vehicle@560a68d6 
+[EL Finer]: 2015-11-30 15:38:32.785--UnitOfWork(1254412540)--Thread(Thread[main,5,main])--begin unit of work commit
+[EL Finest]: 2015-11-30 15:38:32.785--UnitOfWork(1254412540)--Thread(Thread[main,5,main])--Execute query UpdateObjectQuery(jpatest.Vehicle@3f7476bd)
+[EL Finest]: 2015-11-30 15:38:32.786--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: 2015-11-30 15:38:32.786--ClientSession(617730134)--Connection(176010546)--Thread(Thread[main,5,main])--begin transaction
+[EL Fine]: 2015-11-30 15:38:32.786--ClientSession(617730134)--Connection(176010546)--Thread(Thread[main,5,main])--UPDATE jpatest.VEHICLE SET MAKE = ?, MODEL = ?, VERSION = ? WHERE ((VIN = ?) AND (VERSION = ?))
+	bind => [GMC, Volt, 4, 6B7HF16Y7SS244327, 3]
+[EL Finer]: 2015-11-30 15:38:32.789--ClientSession(617730134)--Connection(176010546)--Thread(Thread[main,5,main])--commit transaction
+[EL Finest]: 2015-11-30 15:38:32.79--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--Connection released to connection pool [default].
+[EL Finer]: 2015-11-30 15:38:32.79--UnitOfWork(1254412540)--Thread(Thread[main,5,main])--end unit of work commit
+[EL Finer]: 2015-11-30 15:38:32.79--UnitOfWork(1254412540)--Thread(Thread[main,5,main])--resume unit of work
+[EL Finer]: 2015-11-30 15:38:32.791--UnitOfWork(1254412540)--Thread(Thread[main,5,main])--release unit of work
+[EL Finer]: 2015-11-30 15:38:32.791--ClientSession(617730134)--Thread(Thread[main,5,main])--client released
+[EL Finer]: 2015-11-30 15:38:32.795--ServerSession(1111468685)--Thread(Thread[main,5,main])--client acquired: 1218643148
+[EL Finer]: 2015-11-30 15:38:32.795--ClientSession(1218643148)--Thread(Thread[main,5,main])--acquire unit of work: 1183846997
+[EL Finest]: 2015-11-30 15:38:32.796--UnitOfWork(1183846997)--Thread(Thread[main,5,main])--Execute query ReadAllQuery(referenceClass=Vehicle sql="SELECT VIN, MAKE, MODEL, VERSION, MODEL_YEAR FROM jpatest.VEHICLE WHERE (MAKE = ?)")
+[EL Finest]: 2015-11-30 15:38:32.796--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection acquired from connection pool [read].
+[EL Fine]: 2015-11-30 15:38:32.797--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--SELECT VIN, MAKE, MODEL, VERSION, MODEL_YEAR FROM jpatest.VEHICLE WHERE (MAKE = ?)
+	bind => [GMC]
+[EL Finest]: 2015-11-30 15:38:32.801--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection released to connection pool [read].
+[EL Finest]: 2015-11-30 15:38:32.802--UnitOfWork(1183846997)--Thread(Thread[main,5,main])--Execute query ReadAllQuery(name="selectVehicleByMake" referenceClass=Vehicle sql="SELECT VIN, MAKE, MODEL, VERSION, MODEL_YEAR FROM jpatest.VEHICLE WHERE (MAKE = ?)")
+[EL Finest]: 2015-11-30 15:38:32.803--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection acquired from connection pool [read].
+[EL Fine]: 2015-11-30 15:38:32.803--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--SELECT VIN, MAKE, MODEL, VERSION, MODEL_YEAR FROM jpatest.VEHICLE WHERE (MAKE = ?)
+	bind => [GMC]
+[EL Finest]: 2015-11-30 15:38:32.806--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection released to connection pool [read].
+[EL Finer]: 2015-11-30 15:38:32.807--UnitOfWork(1183846997)--Thread(Thread[main,5,main])--release unit of work
+[EL Finer]: 2015-11-30 15:38:32.807--ClientSession(1218643148)--Thread(Thread[main,5,main])--client released
+vehicle retrieved: 6B7HF16Y7SS244327
+[EL Finer]: 2015-11-30 15:38:32.807--ServerSession(1111468685)--Thread(Thread[main,5,main])--client acquired: 1674245726
+[EL Finer]: 2015-11-30 15:38:32.808--ClientSession(1674245726)--Thread(Thread[main,5,main])--acquire unit of work: 569690241
+[EL Finest]: 2015-11-30 15:38:32.808--UnitOfWork(569690241)--Thread(Thread[main,5,main])--Merge clone with references jpatest.Vehicle@3f7476bd
+[EL Finest]: 2015-11-30 15:38:32.809--UnitOfWork(569690241)--Thread(Thread[main,5,main])--remove() operation called on: jpatest.Vehicle@4d979e91
+[EL Finer]: 2015-11-30 15:38:32.809--UnitOfWork(569690241)--Thread(Thread[main,5,main])--begin unit of work commit
+[EL Finest]: 2015-11-30 15:38:32.809--UnitOfWork(569690241)--Thread(Thread[main,5,main])--Execute query DoesExistQuery(referenceClass=Vehicle )
+[EL Finest]: 2015-11-30 15:38:32.81--UnitOfWork(569690241)--Thread(Thread[main,5,main])--Execute query DeleteObjectQuery(jpatest.Vehicle@4d979e91)
+[EL Finest]: 2015-11-30 15:38:32.81--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: 2015-11-30 15:38:32.811--ClientSession(1674245726)--Connection(176010546)--Thread(Thread[main,5,main])--begin transaction
+[EL Fine]: 2015-11-30 15:38:32.811--ClientSession(1674245726)--Connection(176010546)--Thread(Thread[main,5,main])--DELETE FROM jpatest.VEHICLE WHERE ((VIN = ?) AND (VERSION = ?))
+	bind => [6B7HF16Y7SS244327, 4]
+[EL Finer]: 2015-11-30 15:38:32.814--ClientSession(1674245726)--Connection(176010546)--Thread(Thread[main,5,main])--commit transaction
+[EL Finest]: 2015-11-30 15:38:32.815--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--Connection released to connection pool [default].
+[EL Finer]: 2015-11-30 15:38:32.816--UnitOfWork(569690241)--Thread(Thread[main,5,main])--end unit of work commit
+[EL Finer]: 2015-11-30 15:38:32.816--UnitOfWork(569690241)--Thread(Thread[main,5,main])--resume unit of work
+[EL Finer]: 2015-11-30 15:38:32.816--UnitOfWork(569690241)--Thread(Thread[main,5,main])--release unit of work
+[EL Finer]: 2015-11-30 15:38:32.817--ClientSession(1674245726)--Thread(Thread[main,5,main])--client released
+[EL Finer]: 2015-11-30 15:38:32.817--ServerSession(1111468685)--Thread(Thread[main,5,main])--client acquired: 1608428978
+[EL Finer]: 2015-11-30 15:38:32.817--ClientSession(1608428978)--Thread(Thread[main,5,main])--acquire unit of work: 341684810
+[EL Finest]: 2015-11-30 15:38:32.818--UnitOfWork(341684810)--Thread(Thread[main,5,main])--Execute query ReadObjectQuery(name="readVehicle" referenceClass=Vehicle sql="SELECT VIN, MAKE, MODEL, VERSION, MODEL_YEAR FROM jpatest.VEHICLE WHERE (VIN = ?)")
+[EL Finest]: 2015-11-30 15:38:32.819--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection acquired from connection pool [read].
+[EL Fine]: 2015-11-30 15:38:32.819--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--SELECT VIN, MAKE, MODEL, VERSION, MODEL_YEAR FROM jpatest.VEHICLE WHERE (VIN = ?)
+	bind => [6B7HF16Y7SS244327]
+[EL Finest]: 2015-11-30 15:38:32.822--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--Connection released to connection pool [read].
+[EL Finer]: 2015-11-30 15:38:32.823--UnitOfWork(341684810)--Thread(Thread[main,5,main])--release unit of work
+[EL Finer]: 2015-11-30 15:38:32.823--ClientSession(1608428978)--Thread(Thread[main,5,main])--client released
+[EL Finest]: 2015-11-30 15:38:32.823--ServerSession(1111468685)--Thread(Thread[main,5,main])--Begin undeploying Persistence Unit jpaTestPU; session /file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU; state Deployed; factoryCount 1
+[EL Finest]: 2015-11-30 15:38:32.824--ServerSession(1111468685)--Thread(Thread[main,5,main])--Unregistering MBean: TopLink:Name=Development-/file_/C_/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU,Type=Configuration on server com.sun.jmx.mbeanserver.JmxMBeanServer@4736efa7
+[EL Finest]: 2015-11-30 15:38:32.824--ServerSession(1111468685)--Thread(Thread[main,5,main])--Unregistered MBean [TopLink:Name=Development-/file_/C_/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU,Type=Configuration] from MBeanServer [com.sun.jmx.mbeanserver.JmxMBeanServer@4736efa7].
+[EL Finest]: 2015-11-30 15:38:32.825--ServerSession(1111468685)--Thread(Thread[main,5,main])--Unregistering MBean: TopLink:Name=Session(/file_/C_/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU) on server com.sun.jmx.mbeanserver.JmxMBeanServer@4736efa7
+[EL Finest]: 2015-11-30 15:38:32.825--ServerSession(1111468685)--Thread(Thread[main,5,main])--Unregistered MBean [TopLink:Name=Session(/file_/C_/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU)] from MBeanServer [com.sun.jmx.mbeanserver.JmxMBeanServer@4736efa7].
+[EL Config]: 2015-11-30 15:38:32.825--ServerSession(1111468685)--Connection(1027850331)--Thread(Thread[main,5,main])--disconnect
+[EL Finer]: 2015-11-30 15:38:32.826--ServerSession(1111468685)--Thread(Thread[main,5,main])--initialize identitymaps
+[EL Info]: 2015-11-30 15:38:32.827--ServerSession(1111468685)--Thread(Thread[main,5,main])--/file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU logout successful
+[EL Config]: 2015-11-30 15:38:32.827--ServerSession(1111468685)--Connection(295918039)--Thread(Thread[main,5,main])--disconnect
+[EL Config]: 2015-11-30 15:38:32.828--ServerSession(1111468685)--Connection(176010546)--Thread(Thread[main,5,main])--disconnect
+[EL Finest]: 2015-11-30 15:38:32.829--ServerSession(1111468685)--Thread(Thread[main,5,main])--End undeploying Persistence Unit jpaTestPU; session /file:/C:/Users/liuka/jurnalDev/jpaSourceCode20100528/DOS/_jpaTestPU; state Undeployed; factoryCount 0

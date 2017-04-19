@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+  xmlns="http://java.sun.com/xml/ns/persistence"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+                      http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	<persistence-unit name="jpaTestPU" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		
+		<!--
+		<non-jta-data-source>java:/jpaTestDS</non-jta-data-source>
+		<mapping-file>META-INF/orm2.xml</mapping-file>
+		<mapping-file>META-INF/ormOrder.xml</mapping-file>
+		<mapping-file>META-INF/ormCustomer.xml</mapping-file>
+		<jar-file>order.jar</jar-file>
+		<jar-file>customer.jar</jar-file>
+		-->
+		<class>jpatest.Vehicle</class>
+		<class>jpatest.entity.Address</class>
+		<class>jpatest.entity.Address2</class>
+		<class>jpatest.entity.Address3</class>
+		<class>jpatest.entity.Address3PK</class>
+		<class>jpatest.entity.BankInfo</class>
+		<class>jpatest.entity.BaseEntity</class>
+		<class>jpatest.entity.Book</class>
+		<class>jpatest.entity.Content</class>
+		<class>jpatest.entity.Category</class>
+		<class>jpatest.entity.Customer</class>
+	    <class>jpatest.entity.CustomerPicture</class>
+		<class>jpatest.entity.Customer2</class>
+		<class>jpatest.entity.Customer3</class>
+		<class>jpatest.entity.Customer5</class>
+		<class>jpatest.entity.GoldCustomer</class>
+		<class>jpatest.entity.GoldCustomer2</class>
+		<class>jpatest.entity.GoldCustomer3</class>
+		<class>jpatest.entity.GoldCustomer5</class>
+		<class>jpatest.entity.LineItem</class>
+		<class>jpatest.entity.Order</class>
+		<class>jpatest.entity.PreferredCustomer</class>
+		<class>jpatest.entity.PreferredCustomer2</class>
+		<class>jpatest.entity.PreferredCustomer3</class>
+		<class>jpatest.entity.PreferredCustomer5</class>
+		<class>jpatest.entity.User</class>
+		
+		<class>jpatest.entity.Apartment1a</class>
+		<class>jpatest.entity.Apartment1b</class>
+		<class>jpatest.entity.Apartment1PK</class>
+		<class>jpatest.entity.Apartment2a</class>
+		<class>jpatest.entity.Apartment2b</class>
+		<class>jpatest.entity.Apartment2PK</class>
+		<class>jpatest.entity.Apartment3a</class>
+		<class>jpatest.entity.Apartment3b</class>
+		<class>jpatest.entity.Apartment3PK</class>
+		<class>jpatest.entity.House4a</class>
+		<class>jpatest.entity.House4b</class>
+		<class>jpatest.entity.House5a</class>
+		<class>jpatest.entity.House5b</class>
+		<class>jpatest.entity.House6a</class>
+		<class>jpatest.entity.House6b</class>
+		
+		<exclude-unlisted-classes/> 
+        <!--   
+        <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode> 
+        <validation-mode>CALLBACK</validation-mode>
+        -->   
+      
+		<properties>
+		    <property name="eclipselink.target-database" value="Derby" />
+			<property name="eclipselink.target-server" value="JBoss" />		
+			<property name="eclipselink.logging.level" value="FINEST" />
+			
+			<property name="eclipselink.jdbc.read-connections.min" value="1" />
+			<property name="eclipselink.jdbc.read-connections.max" value="100" />
+			<property name="eclipselink.jdbc.write-connections.min" value="1" />
+			<property name="eclipselink.jdbc.write-connections.max" value="100" />
+			<property name="eclipselink.jdbc.read-connections.shared" value="true" />
+	
+			<property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/jpatest" />
+			<property name="javax.persistence.jdbc.user" value="jpatest" />
+			<property name="javax.persistence.jdbc.password" value="jpatest" />
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver" />
+            <property name="javax.persistence.lock.timeout" value="30000" />
+		    <property name="javax.persistence.validation.group.pre-persist" value="jpatest.groups.Basic,jpatest.groups.Extended" />
+		
+		    <!--  
+			<property name="eclipselink.cache.type.default" value="SoftWeak" />
+			<property name="eclipselink.cache.size.default" value="5000" />
+			<property name="eclipselink.cache.shared.default" value="true" />
+			<property name="eclipselink.flush-clear.cache" value="DropInvalidate" />
+			<property name="eclipselink.cache.type.Vehicle" value="SoftWeak" />
+			<property name="eclipselink.cache.size.Vehicle" value="100" />
+			<property name="eclipselink.cache.shared.Vehicle" value="true" />
+			<property name="eclipselink.cache.type.Order" value="SoftWeak" />
+			<property name="eclipselink.cache.size.Order" value="100" />
+			<property name="eclipselink.cache.shared.Order" value="true" />
+			-->
+		</properties>
+	</persistence-unit>
+
+
+	<persistence-unit name="jpaTestJtaPU" transaction-type="JTA">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<jta-data-source>java:/jpaTestJtaDS</jta-data-source>
+		<!--  
+		<mapping-file>META-INF/orm.xml</mapping-file>
+		-->
+		<class>jpatest.Vehicle</class>
+		<class>jpatest.entity.Address</class>
+		<class>jpatest.entity.Address2</class>
+		<class>jpatest.entity.Address3</class>
+		<class>jpatest.entity.Address3PK</class>
+		<class>jpatest.entity.BankInfo</class>
+		<class>jpatest.entity.BaseEntity</class>
+		<class>jpatest.entity.Book</class>
+		<class>jpatest.entity.Category</class>
+		<class>jpatest.entity.Customer</class>
+		<class>jpatest.entity.Customer2</class>
+		<class>jpatest.entity.Customer3</class>
+		<class>jpatest.entity.Customer5</class>
+		<class>jpatest.entity.GoldCustomer</class>
+		<class>jpatest.entity.GoldCustomer2</class>
+		<class>jpatest.entity.GoldCustomer3</class>
+		<class>jpatest.entity.GoldCustomer5</class>
+		<class>jpatest.entity.LineItem</class>
+		<class>jpatest.entity.Order</class>
+		<class>jpatest.entity.PreferredCustomer</class>
+		<class>jpatest.entity.PreferredCustomer2</class>
+		<class>jpatest.entity.PreferredCustomer3</class>
+		<class>jpatest.entity.PreferredCustomer5</class>
+		<class>jpatest.entity.User</class>
+
+		<properties>
+			<property name="eclipselink.logging.level" value="FINEST" />
+			<property name="eclipselink.target-server" value="JBoss" />
+			<property name="eclipselink.target-database" value="Derby" />
+		</properties>
+	</persistence-unit>
+ 
+</persistence>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+               http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+	<persistence-unit name="jpaTestPU" transaction-type="RESOURCE_LOCAL">	  
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<!--  <non-jta-data-source>java:/jpaTestDS</non-jta-data-source>  	 -->		
+	  <mapping-file>META-INF/orm.xml</mapping-file> 
+	  <class>jpatest.Vehicle</class>
+		
+
+		<properties>
+		  <property name="eclipselink.target-server" value="JBoss" />
+			<property name="eclipselink.logging.level" value="FINEST" />
+			<property name="eclipselink.jdbc.read-connections.min" value="1" />
+				
+			<property name="eclipselink.jdbc.read-connections.max" value="100" />				
+			<property name="eclipselink.jdbc.write-connections.min" value="1" />				
+			<property name="eclipselink.jdbc.write-connections.max" value="100" />				
+			<property name="eclipselink.jdbc.read-connections.shared" value="true" />				
+
+			<property name="eclipselink.target-database" value="Derby" />
+			<property name="eclipselink.jdbc.url" value="jdbc:derby://localhost:1527/jpatest" />
+			<property name="eclipselink.jdbc.user" value="jpatest" />
+			<property name="eclipselink.jdbc.password" value="jpatest" />
+			<property name="eclipselink.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver" />
+
+			<property name="eclipselink.cache.type.default" value="SoftWeak" />
+			<property name="eclipselink.cache.size.default" value="5000" />
+			<property name="eclipselink.cache.shared.default" value="true" />
+			<property name="eclipselink.flush-clear.cache" value="DropInvalidate" />
+			<property name="eclipselink.cache.type.Vehicle" value="SoftWeak" />
+			<property name="eclipselink.cache.size.Vehicle" value="100" />
+			<property name="eclipselink.cache.shared.Vehicle" value="true" />
+			<property name="eclipselink.cache.type.Order" value="SoftWeak" />
+			<property name="eclipselink.cache.size.Order" value="100" />
+			<property name="eclipselink.cache.shared.Order" value="true" />
+		</properties>
+	</persistence-unit>
+	
+	<!--  
+	<persistence-unit name="jpaTestJtaPU" transaction-type="JTA">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<jta-data-source>java:/jpaTestJtaDS</jta-data-source>
+		<mapping-file>META-INF/orm.xml</mapping-file>
+		<mapping-file>META-INF/orm-queries.xml</mapping-file>
+		<class>jpatest.entity.BaseEntity</class>
+		<class>jpatest.entity.PreferredCustomer</class>
+		<class>jpatest.entity.Order</class>
+		<class>jpatest.entity.LineItem</class>
+		<class>jpatest.entity.GoldCustomer</class>
+		<class>jpatest.entity.Customer</class>
+		<class>jpatest.entity.Category</class>
+		<class>jpatest.entity.Book</class>
+		<class>jpatest.entity.Address</class>
+		<class>jpatest.entity.Address2</class>
+		<class>jpatest.entity.Address3</class>
+		<class>jpatest.entity.Address3PK</class>
+		<class>jpatest.entity.BankInfo</class>
+		<class>jpatest.Vehicle</class>
+		
+		
+		<properties>
+		    <property name="eclipselink.logging.level" value="FINEST" />
+		    <property name="eclipselink.target-server" value="JBoss" />
+			  <property name="eclipselink.target-database" value="Derby" />								
+	   </properties>
+  </persistence-unit>
+  -->
+</persistence>

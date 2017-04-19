@@ -1,0 +1,20 @@
+<!DOCTYPE jboss-web PUBLIC
+   "-//JBoss//DTD Web Application 5.0//EN"
+   "http://www.jboss.org/j2ee/dtd/jboss-web_5_0.dtd">
+
+<jboss-web>
+	<!--
+		Uncomment the security-domain to enable security. 
+		The following files control the configuration
+		C:\jboss\server\default\conf\login-config.xml
+		C:\jboss\server\default\conf\props\web-console-roles.xml
+		C:\jboss\server\default\conf\props\web-console-users.xml
+		
+		At login prompt, enter username and password both: jpatest
+		-->
+	
+
+	<security-domain>java:/jaas/web-console</security-domain>
+	
+	
+</jboss-web>

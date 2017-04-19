@@ -1,0 +1,12 @@
+com\danibuiza\javacodegeeks\springbatch\CustomItemProcessor.class
+com\danibuiza\javacodegeeks\springbatch\CustomItemReader.class
+com\danibuiza\javacodegeeks\springbatch\CustomItemWriter.class
+com\danibuiza\javacodegeeks\springbatch\SpringBatchTutorialConfiguration.class
+com\danibuiza\javacodegeeks\springbatch\SpringBatchTutorialConfiguration$1$2.class
+com\danibuiza\javacodegeeks\springbatch\CustomDelimitedAggregator.class
+com\danibuiza\javacodegeeks\springbatch\CustomFieldExtractor.class
+com\danibuiza\javacodegeeks\springbatch\SpringBatchTutorialConfiguration$1.class
+com\danibuiza\javacodegeeks\springbatch\CustomPojo.class
+com\danibuiza\javacodegeeks\springbatch\SpringBatchTutorialMain.class
+com\danibuiza\javacodegeeks\springbatch\CustomFlatFileItemWriter.class
+com\danibuiza\javacodegeeks\springbatch\SpringBatchTutorialConfiguration$1$1.class

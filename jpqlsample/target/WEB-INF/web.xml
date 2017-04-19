@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	 version="2.5">
+    <servlet>
+        <servlet-name>JpqlJoinsServlet</servlet-name>
+        <servlet-class>jpqlexample.servlets.JpqlJoinsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SingleColumnServlet</servlet-name>
+        <servlet-class>jpqlexample.servlets.SingleColumnServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SimpleQueryServlet</servlet-name>
+        <servlet-class>jpqlexample.servlets.SimpleQueryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContextServlet</servlet-name>
+        <servlet-class>jpqlexample.servlets.ContextServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewEntityServlet</servlet-name>
+        <servlet-class>jpqlexample.servlets.NewEntityServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JoinFetchServlet</servlet-name>
+        <servlet-class>jpqlexample.servlets.JoinFetchServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NativeQueryServlet</servlet-name>
+        <servlet-class>jpqlexample.servlets.NativeQueryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StoredFunctionServlet</servlet-name>
+        <servlet-class>jpqlexample.servlets.StoredFunctionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>JpqlJoinsServlet</servlet-name>
+        <url-pattern>/jpqljoinsservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SingleColumnServlet</servlet-name>
+        <url-pattern>/singlecolumnservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimpleQueryServlet</servlet-name>
+        <url-pattern>/simplequeryservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContextServlet</servlet-name>
+        <url-pattern>/contextservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewEntityServlet</servlet-name>
+        <url-pattern>/newentityservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JoinFetchServlet</servlet-name>
+        <url-pattern>/joinfetchservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NativeQueryServlet</servlet-name>
+        <url-pattern>/nativequeryservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StoredFunctionServlet</servlet-name>
+        <url-pattern>/storedfunctionservlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
